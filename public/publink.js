@@ -1,3 +1,5 @@
+const serverUrl = "https://publink.herokuapp.com";
+
 const contentElement = document.getElementById("content");
 
 // Create and return a DOM element showing a link
@@ -55,7 +57,7 @@ const submitLink = e => {
   // Create a FormData object, passing the form as a parameter
   const formData = new FormData(e.target);
   // Send link data to the server with an aynchronous POST request
-  fetch("http://localhost:3000/links", {
+  fetch(`${serverUrl}/links`, {
     method: "POST",
     body: formData
   })
@@ -111,7 +113,7 @@ const createLinkForm = () => {
 };
 
 // Fetch links from server
-fetch("https://publink.herokuapp.com/api/links")
+fetch(`${serverUrl}/api/links`)
   .then(response => response.json())
   .then(links => {
     links.forEach(link => {
