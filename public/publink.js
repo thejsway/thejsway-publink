@@ -111,7 +111,7 @@ const createLinkForm = () => {
 };
 
 // Fetch links from server
-fetch("http://localhost:3000/api/links")
+fetch("https://publink.herokuapp.com/api/links")
   .then(response => response.json())
   .then(links => {
     links.forEach(link => {
