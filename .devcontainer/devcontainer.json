@@ -8,7 +8,7 @@
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install",
+	"postCreateCommand": "npm install",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Add Prettier and ESLint to VS Code.
@@ -17,7 +17,7 @@
 				"editor.formatOnSave": true,
 				"[javascript]": {
 					"editor.defaultFormatter": "esbenp.prettier-vscode"
-				  },
+				},
 				"eslint.enable": true
 			},
 			"extensions": [
