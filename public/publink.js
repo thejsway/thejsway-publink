@@ -1,4 +1,5 @@
-const serverUrl = "https://publink.herokuapp.com";
+// Change this variable to "http://localhost:3000" for local development
+const serverUrl = "https://thejsway-publink.herokuapp.com";
 
 const contentElement = document.getElementById("content");
 
